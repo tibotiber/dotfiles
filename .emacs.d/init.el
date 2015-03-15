@@ -42,7 +42,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(font-lock-comment-face ((t (:foreground "black")))))
+ '(font-lock-comment-face ((t (:foreground "black"))))
+ '(ido-first-match ((t (:foreground "yellow" :weight bold))))
+ '(ido-subdir ((t (:foreground "blue" :weight bold))))
+ '(isearch ((t (:background "yellow" :foreground "white"))))
+ '(isearch-fail ((t (:background "red"))))
+ '(minibuffer-prompt ((t (:foreground "brightblue")))))
 
 ;; ------------
 ;; -- Macros --

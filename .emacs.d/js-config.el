@@ -27,7 +27,7 @@
                            (local-set-key "\C-cb" 'js-send-buffer)
                            (local-set-key "\C-c\C-b" 'js-send-buffer-and-go)
                            (local-set-key "\C-cl" 'js-load-file-and-go)
-                           (local-set-key "\C-c!" 'run-js)
+                           (local-set-key "\C-c\C-n" 'run-js)
                            (local-set-key "\C-c\C-r" 'js-send-region)
                            (local-set-key "\C-c\C-j" 'js-send-line)
                            (set (make-local-variable 'compile-command) 
