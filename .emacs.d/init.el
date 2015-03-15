@@ -61,6 +61,7 @@
 (global-set-key "\M-d" 'delete-word)
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
+(load "swap-windows.el")
 
 ;; ---------------------
 ;; -- Package manager --
