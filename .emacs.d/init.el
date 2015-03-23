@@ -22,7 +22,6 @@
 (menu-bar-mode -1)
 (normal-erase-is-backspace-mode 0)
 (electric-indent-mode 1)
-(electric-pair-mode 1)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (setq column-number-mode t)
@@ -117,3 +116,8 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes (quote ("12dd37432bb454355047c967db886769a6c60e638839405dad603176e2da366b" default))))
 
+;; automatic pairing of braces and quotes ;;
+(require 'autopair)
+(autopair-global-mode)
+
+;;; init.el ends here
