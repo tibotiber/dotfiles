@@ -22,6 +22,7 @@
 (menu-bar-mode -1)
 (normal-erase-is-backspace-mode 0)
 (electric-indent-mode 1)
+(electric-pair-mode 1)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (setq column-number-mode t)
