@@ -120,4 +120,7 @@
 (require 'autopair)
 (autopair-global-mode)
 
+;; handlebars mode
+(require 'handlebars-mode)
+
 ;;; init.el ends here
