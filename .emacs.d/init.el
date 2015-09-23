@@ -9,6 +9,7 @@
 (require 'ido)
 (require 'ffap)
 (require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward)
 (require 'ansi-color)
 (require 'recentf)
 (require 'linum)
