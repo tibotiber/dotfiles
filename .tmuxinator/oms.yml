@@ -21,13 +21,10 @@ root: ~/greeny-oms/
 windows:
   - shell:
   - emacs: emacs -nw
+  - ember:
+    - cd frontend
+    - ember server
   - sails:
+    - cd backend
+    - nodemon app.js
   - psql: sudo -u postgres psql
-  - ubi: cd ~/ubismart/
-#  - editor:
-#      layout: main-vertical
-#      panes:
-#        - vim
-#        - guard
-#  - server: bundle exec rails s
-#  - logs: tail -f log/development.log
