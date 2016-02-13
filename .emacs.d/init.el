@@ -124,4 +124,7 @@
 ;; handlebars mode
 (require 'handlebars-mode)
 
+;; node-repl-eval
+(require 'nodejs-repl-eval)
+
 ;;; init.el ends here
