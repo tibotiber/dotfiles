@@ -11,6 +11,9 @@
 ;; add json files to js-mode
 (add-to-list 'auto-mode-alist '("\\.json$" . js-mode))
 
+;; indent level
+(setq js-indent-level 2)
+
 ;; Configure jshint for JS style checking.
 ;;   - Install: $ npm install -g jshint
 ;;   - Usage: Hit C-cC-u within any emacs buffer visiting a .js file
