@@ -93,6 +93,10 @@
 ;; support for less syntax
 (load "less-css-mode.el")
 
+;; support for .editorconfig
+(require 'editorconfig)
+(editorconfig-mode 1)
+
 ;; -------------------
 ;; -- Auto-complete --
 ;; -------------------
