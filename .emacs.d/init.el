@@ -1,6 +1,10 @@
 ;; -*- mode: emacs-lisp -*-
 ;; Simple .emacs configuration
 
+;; fix for js2-mode not able to load
+(require 'package)
+(package-initialize)
+
 ;; ---------------------
 ;; -- Global Settings --
 ;; ---------------------
@@ -93,7 +97,7 @@
 ;; -- Auto-complete --
 ;; -------------------
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
 (ac-config-default)
 
 ;; web-beautify for js, css, html
@@ -106,7 +110,6 @@
   '(define-key html-mode-map (kbd "C-c b") 'web-beautify-html))
 (eval-after-load 'css-mode
   '(define-key css-mode-map (kbd "C-c b") 'web-beautify-css))
-
 
 ;; flycheck mode permanently
 (add-hook 'after-init-hook #'global-flycheck-mode)
