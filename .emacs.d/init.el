@@ -123,6 +123,26 @@
 (add-hook 'js-mode-hook #'jscs-indent-apply)
 (add-hook 'js-mode-hook #'jscs-fix-run-before-save)
 
+;; integrate jscs to flycheck
+(with-eval-after-load 'flycheck
+  ;; Define a checker for jscs...
+  (flycheck-define-checker javascript-jscs
+            "A JavaScript style checker using jscs. See URL `https://www.npmjs.com/package/jscs'."
+	    :command ("jscs" "--reporter=checkstyle"
+		      (config-file "--config" flycheck-jscsrc)
+		      source)
+	    :error-parser flycheck-parse-checkstyle
+	    :modes (js-mode js2-mode js3-mode))
+  ;; Make flycheck-jscsrc configuration with default.
+  (flycheck-def-config-file-var flycheck-jscsrc javascript-jscs ".jscs.json"
+    :safe #'stringp)
+  ;; Make javascript-jscs automatically selectable to flycheck
+  ;;
+  ;; Use t to append at the end so it's not used by default.
+  (add-to-list 'flycheck-checkers 'javascript-jscs t)
+  ;; Chain javascript-jscs to run after javascript-jshint.
+  (flycheck-add-next-checker 'javascript-jshint '(t . javascript-jscs)))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
