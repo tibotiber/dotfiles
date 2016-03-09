@@ -117,6 +117,12 @@
 
 ;; flycheck mode permanently
 (add-hook 'after-init-hook #'global-flycheck-mode)
+
+;; jscs
+(load "jscs.el")
+(add-hook 'js-mode-hook #'jscs-indent-apply)
+(add-hook 'js-mode-hook #'jscs-fix-run-before-save)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
