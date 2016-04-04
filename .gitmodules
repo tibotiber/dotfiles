@@ -1,3 +1,3 @@
 [submodule ".zprezto"]
 	path = .zprezto
-	url = git@github.com:tibotiber/prezto.git
+	url = git://github.com/tibotiber/prezto.git
