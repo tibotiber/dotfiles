@@ -45,7 +45,8 @@
   "language-babel":
     autoIndentJSX: true
   linter: {}
-  "linter-eslint": {}
+  "linter-eslint":
+    fixOnSave: true
   "linter-jscs":
     configPath: ".jscsrc"
     fixOnSave: true
