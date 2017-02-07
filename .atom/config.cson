@@ -42,6 +42,8 @@
     userId: "b06772e5-3cf4-e47d-4f5b-8e304650fbf5"
   "highlight-line": {}
   "isotope-ui": {}
+  "language-babel":
+    autoIndentJSX: true
   linter: {}
   "linter-eslint": {}
   "linter-jscs":
