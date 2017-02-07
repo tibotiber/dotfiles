@@ -34,6 +34,7 @@
     ]
   "dark-flat-ui": {}
   editor:
+    fontFamily: "\"Inconsolata-dz for Powerline\""
     fontSize: 11
     invisibles: {}
     showIndentGuide: true
