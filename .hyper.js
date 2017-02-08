@@ -16,7 +16,7 @@ module.exports = {
     foregroundColor: '#d6d6d6',
 
     // terminal background color
-    backgroundColor: '#383838',
+    backgroundColor: '#323232',
 
     // border color (window, tabs)
     borderColor: '#52595e',
@@ -45,17 +45,17 @@ module.exports = {
     // an array here instead of a color map object
     colors: {
       black: '#52595e',
-      red: '#7b3b00',
+      red: '#954700',
       green: '#9db163',
-      yellow: '#7f6d00',
+      yellow: '#998300',
       blue: '#6fa0b2',
-      magenta: '#78176c',
+      magenta: '#8d1b7f',
       cyan: '#007f7d',
       white: '#bfbfbf',
       lightBlack: '#666666',
       lightRed: '#b95d02',
       lightGreen: '#bbce40',
-      lightYellow: '#c0a900',
+      lightYellow: '#dabf00',
       lightBlue: '#78c1d9',
       lightMagenta: '#c0289e',
       lightCyan: '#00b8b4',
