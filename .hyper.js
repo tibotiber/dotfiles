@@ -79,6 +79,9 @@ module.exports = {
     // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false,
 
+    // use alt as meta key
+    modifierKeys: { altIsMeta: true },
+
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
 
