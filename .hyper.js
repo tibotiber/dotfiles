@@ -10,7 +10,7 @@ module.exports = {
     cursorColor: '#d6d6d6',
 
     // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
-    cursorShape: 'BEAM',
+    cursorShape: 'UNDERLINE',
 
     // color of the text
     foregroundColor: '#d6d6d6',
@@ -80,7 +80,9 @@ module.exports = {
     copyOnSelect: false,
 
     // use alt as meta key
-    modifierKeys: { altIsMeta: true },
+    modifierKeys: {
+      altIsMeta: true
+    },
 
     // URL to custom bell
     // bellSoundURL: 'http://example.com/bell.mp3',
