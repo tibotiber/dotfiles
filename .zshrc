@@ -30,10 +30,9 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-history-substring-search
   oz/safe-paste # fixes up/down keybindings
+  mafredri/zsh-async
+  sindresorhus/pure
 EOBUNDLES
-
-# load the theme
-antigen theme refined
 
 # load ssh identities
 antigen bundle ssh-agent
